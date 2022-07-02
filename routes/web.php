@@ -20,7 +20,6 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/get_models',  [App\Http\Controllers\FormController::class, 'get_models']);
     Route::post('/tamir_yeri',  [App\Http\Controllers\FormController::class, 'tamir_yeri']);
     Route::post('/tamir',  [App\Http\Controllers\FormController::class, 'tamir']);
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 
 
